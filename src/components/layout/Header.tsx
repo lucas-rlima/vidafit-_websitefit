@@ -11,7 +11,7 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "Alimentos", path: "/alimentos" },
   { name: "Dietas Personalizadas", path: "/dietas" },
-  { name: "Login / Cadastro", path: "/auth" },
+  { name: "Login / Cadastro", path: "/login" }, // Changed from /auth to /login
 ];
 
 const Header = () => {
