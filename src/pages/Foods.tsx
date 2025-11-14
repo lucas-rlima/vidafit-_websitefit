@@ -163,7 +163,7 @@ const Foods = () => {
                         <img
                           src={food.image}
                           alt={food.name}
-                          className="w-16 h-16 object-cover rounded-full mr-4" {/* Changed to rounded-full */}
+                          className="w-16 h-16 object-cover rounded-full mr-4"
                         />
                         <p className="font-medium text-gray-800 dark:text-gray-100">{food.name}</p>
                       </CardContent>
@@ -190,7 +190,7 @@ const Foods = () => {
                 <img
                   src={selectedFood.image}
                   alt={selectedFood.name}
-                  className="w-24 h-24 object-cover rounded-full mr-6" {/* Changed to rounded-full */}
+                  className="w-24 h-24 object-cover rounded-full mr-6"
                 />
                 <div>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">Categoria: <Badge variant="outline" className="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">{selectedFood.category}</Badge></p>
