@@ -34,7 +34,7 @@ export const mockFoods: FoodItem[] = [
     id: "1",
     name: "Maçã",
     category: "Frutas",
-    image: "/placeholder.svg",
+    image: "/assets/alimento_maca.jpg",
     nutritionalValuesPer100g: {
       calories: 52,
       proteins: 0.3,
@@ -51,7 +51,7 @@ export const mockFoods: FoodItem[] = [
     id: "2",
     name: "Banana",
     category: "Frutas",
-    image: "/placeholder.svg",
+    image: "/assets/alimento_maca.jpg",
     nutritionalValuesPer100g: {
       calories: 89,
       proteins: 1.1,
@@ -68,7 +68,7 @@ export const mockFoods: FoodItem[] = [
     id: "3",
     name: "Brócolis",
     category: "Legumes e Verduras",
-    image: "/placeholder.svg",
+    image: "/assets/alimento_maca.jpg",
     nutritionalValuesPer100g: {
       calories: 34,
       proteins: 2.8,
@@ -86,7 +86,7 @@ export const mockFoods: FoodItem[] = [
     id: "4",
     name: "Arroz Integral",
     category: "Grãos",
-    image: "/placeholder.svg",
+    image: "/assets/alimento_maca.jpg",
     nutritionalValuesPer100g: {
       calories: 111,
       proteins: 2.6,
@@ -103,7 +103,7 @@ export const mockFoods: FoodItem[] = [
     id: "5",
     name: "Peito de Frango Cozido",
     category: "Proteínas",
-    image: "/placeholder.svg",
+    image: "/assets/alimento_maca.jpg",
     nutritionalValuesPer100g: {
       calories: 165,
       proteins: 31,
@@ -119,7 +119,7 @@ export const mockFoods: FoodItem[] = [
     id: "6",
     name: "Leite Integral",
     category: "Laticínios",
-    image: "/placeholder.svg",
+    image: "/assets/alimento_maca.jpg",
     nutritionalValuesPer100g: {
       calories: 61,
       proteins: 3.2,
@@ -135,7 +135,7 @@ export const mockFoods: FoodItem[] = [
     id: "7",
     name: "Biscoito Recheado",
     category: "Industrializados",
-    image: "/placeholder.svg",
+    image: "/assets/alimento_maca.jpg",
     nutritionalValuesPer100g: {
       calories: 480,
       proteins: 5,
@@ -149,7 +149,7 @@ export const mockFoods: FoodItem[] = [
     id: "8",
     name: "Salmão Grelhado",
     category: "Proteínas",
-    image: "/placeholder.svg",
+    image: "/assets/alimento_maca.jpg",
     nutritionalValuesPer100g: {
       calories: 208,
       proteins: 20,
@@ -166,7 +166,7 @@ export const mockFoods: FoodItem[] = [
     id: "9",
     name: "Batata Doce",
     category: "Legumes e Verduras",
-    image: "/placeholder.svg",
+    image: "/assets/alimento_maca.jpg",
     nutritionalValuesPer100g: {
       calories: 86,
       proteins: 1.6,
@@ -184,7 +184,7 @@ export const mockFoods: FoodItem[] = [
     id: "10",
     name: "Aveia em Flocos",
     category: "Grãos",
-    image: "/placeholder.svg",
+    image: "/assets/alimento_maca.jpg",
     nutritionalValuesPer100g: {
       calories: 389,
       proteins: 16.9,

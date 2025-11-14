@@ -30,21 +30,50 @@ const Index = () => {
     },
   ];
 
+  const homeCards = [
+    {
+      image: "/assets/card_acompanhamento.jpg",
+      title: "Acompanhe seu Progresso",
+      description: "Monitore sua evolução e alcance seus objetivos de forma eficaz.",
+      link: "/dietas",
+    },
+    {
+      image: "/assets/card_dicas.jpg",
+      title: "Dicas e Conteúdo Saudável",
+      description: "Explore artigos e guias para uma vida mais equilibrada.",
+      link: "/blog", // Assuming a future blog page
+    },
+    {
+      image: "/assets/card_receitas.jpg",
+      title: "Receitas Deliciosas",
+      description: "Descubra e crie receitas nutritivas e saborosas.",
+      link: "/alimentos",
+    },
+  ];
+
   return (
     <div className="flex flex-col items-center justify-center">
       {/* Hero Section */}
-      <section className="w-full py-20 md:py-32 text-center bg-gradient-to-b from-green-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-lg mb-12">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-green-800 dark:text-green-300 mb-4 leading-tight">
-          VidaFit+
-        </h1>
-        <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-200 mb-8 font-light">
-          Seu corpo, sua melhor versão
-        </p>
-        <Link to="/auth">
-          <Button className="px-8 py-6 text-lg bg-green-600 hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600 rounded-full shadow-md transition-all duration-300 ease-in-out transform hover:scale-105">
-            Começar agora
-          </Button>
-        </Link>
+      <section className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-xl shadow-lg mb-12">
+        <img
+          src="/assets/hero_home.jpg"
+          alt="Healthy food and fitness"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black/40 text-white p-4 text-center">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">
+            VidaFit+
+          </h1>
+          <p className="text-2xl md:text-3xl mb-8 font-light drop-shadow-md">
+            Seu corpo, sua melhor versão
+          </p>
+          <Link to="/login">
+            <Button className="px-8 py-6 text-lg bg-green-600 hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600 rounded-full shadow-md transition-all duration-300 ease-in-out transform hover:scale-105">
+              Começar agora
+            </Button>
+          </Link>
+          <img src="/assets/icon_healthy.svg" alt="Healthy icon" className="absolute bottom-4 right-4 h-12 w-12 opacity-70" />
+        </div>
       </section>
 
       {/* Introduction Benefits */}
@@ -88,6 +117,37 @@ const Index = () => {
                 {feature.description}
               </CardContent>
             </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* New Section for Home Section Cards */}
+      <section className="w-full max-w-5xl mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 text-center mb-10">
+          Explore Mais
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {homeCards.map((card, index) => (
+            <Link to={card.link} key={index}>
+              <Card className="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-gray-800 h-full flex flex-col">
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="w-full h-48 object-cover"
+                />
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-xl font-semibold text-gray-900 dark:text-gray-50">
+                    {card.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="text-gray-600 dark:text-gray-300 flex-grow">
+                  {card.description}
+                </CardContent>
+                <div className="p-4 pt-0">
+                  <Button variant="link" className="text-green-600 dark:text-green-400">Saiba Mais</Button>
+                </div>
+              </Card>
+            </Link>
           ))}
         </div>
       </section>

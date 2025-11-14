@@ -214,7 +214,20 @@ const DietPlans = () => {
 
   return (
     <div className="flex flex-col items-center py-8">
-      <h1 className="text-4xl font-bold text-green-700 dark:text-green-400 mb-4">Dietas Personalizadas</h1>
+      {/* Page Banner/Header Image */}
+      <div className="relative w-full h-48 md:h-64 overflow-hidden rounded-xl shadow-lg mb-8">
+        <img
+          src="/assets/receita_salada.jpg"
+          alt="Diet Plans Banner"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="relative z-10 flex items-center justify-center h-full bg-black/40 text-white p-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
+            Dietas Personalizadas
+          </h1>
+        </div>
+      </div>
+
       <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 text-center max-w-2xl">
         Monte sua dieta de acordo com seu corpo e objetivos. Preencha os dados abaixo para gerar um plano alimentar personalizado.
       </p>
